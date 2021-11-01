@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.9'
 
 services:
   node:
@@ -13,12 +13,14 @@ services:
       - 5000:5000
     depends_on:
       - db
+    links:
+      - database:db
 
   db:
     restart: unless-stopped
     image: postgres:13-alpine
     ports:
-      - 5432:5432
+      - 5434:5432
     env_file:
       - $PWD/.env
       - $PWD/.env.local
