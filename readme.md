@@ -1,3 +1,8 @@
+# Requirement
+
+- Docker
+- Docker-compose
+
 # Setup
 
 ```bash
