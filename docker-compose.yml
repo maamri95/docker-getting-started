@@ -20,7 +20,8 @@ services:
     ports:
       - 5432:5432
     env_file:
-      - ./.env
+      - $PWD/.env
+      - $PWD/.env.local
     volumes:
       - $PWD/.data:/var/lib/postgresql/data
       - $PWD/var:/var/www/var

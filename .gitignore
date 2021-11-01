@@ -1,0 +1,4 @@
+.data/
+var/
+node_modules/
+local.env
